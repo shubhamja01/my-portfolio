@@ -322,7 +322,7 @@ section {
 .pic img {
   transition: transform 0.3s ease-in-out;
   max-height: 500px;
-  
+  user-select: none !important;
 }
 
 .pic:hover img {
