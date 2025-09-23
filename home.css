@@ -40,7 +40,7 @@ section {
   z-index: -1;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.9s ease-in-out;
 }
 
 .navbar:hover::before {
@@ -50,7 +50,7 @@ section {
 
 .navbar:hover {
   color: #fff;
-  box-shadow: 0 12px 28px rgba(255, 88, 88, 0.4);
+  box-shadow: 0 12px 28px rgba(255, 247, 88, 0.4);
 }
 
 .nav-link {
