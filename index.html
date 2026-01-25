@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" id="myDiv" style="user-select: none !important;">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,262 +21,327 @@
     });
   </script>
 
-<script>
-  document.addEventListener("keydown", function(e) {
-    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
-      e.preventDefault();
-      alert("View Source is disabled!");
-    }
-  });
-</script>
-<script>
-  document.addEventListener("keydown", function(e) {
-    if (e.keyCode == 123) {
-      e.preventDefault();
-      alert("Inspect disabled!");
-    }
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') {
-      e.preventDefault();
-      alert("Inspect disabled!");
-    }
-  });
-</script>
+  <script>
+    document.addEventListener("keydown", function (e) {
+      if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+        e.preventDefault();
+        alert("View Source is disabled!");
+      }
+    });
+  </script>
+  <script>
+    document.addEventListener("keydown", function (e) {
+      if (e.keyCode == 123) {
+        e.preventDefault();
+        alert("Inspect disabled!");
+      }
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') {
+        e.preventDefault();
+        alert("Inspect disabled!");
+      }
+    });
+  </script>
 
 
- <style>
+  <style>
     body {
       font-family: Arial, sans-serif;
     }
   </style>
 
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Shubham Jawale</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<section id="home" class="hero">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-sm-6  loading">
-        <p class="fs-3 fw-bold">Hey, I’m</p>
-        <h1>SHUBHAM JAWALE</h1>
-        <h2 class="fw-bold"> I’m a <span>Web Developer</span></h2>
-          <p class="about-p loading-dots fw-bold">I am completed BBA-CA from Nagar College and doing an internship at A2Z IT Hub, where I am gaining hands-on experience in responsive web development. My responsibilities include working on real-time projects and ensuring mobile-friendly designs. This internship is helping me understand industry-level demands and preparing me to contribute effectively in professional environments.</p>
-        <a href="https://github.com/shubhamja01" target="_blank" title="Github"><i class="fab fa-github"></i></a>
-        <a href="https://instagram.com/jawale_shubham__" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/shubham-jawale-11867732a/" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:sjawale947@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-        <div class="mt-4">
-          <a href="resume.pdf" target="_blank" class="btn btn-light rounded-pill px-4 shadow">Download CV</a>
-          <a href="#about" class="btn btn-outline-light rounded-pill px-4 ms-2">Contact Me</a>
-        </div>
-      </div>
-
-      <div class="col-sm-6 pic text-center" data-aos="zoom-in-up" data-aos-delay="200">
-        <img src="pic.png" alt="Profile" class="img-fluid rounded-5 shadow w-75 bg-white" style="user-select: none !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Shubham Jawale</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<section id="about" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5 fw-bold" data-aos="fade-up" data-aos-duration="1200">About Me</h2>
-
-    <div class="row g-4 align-items-start">
-      <!-- Left Side -->
-      <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card shadow-sm border-0 rounded-3 p-4 h-100">
-          <h3 class="mb-4 fw-semibold text-primary">Personal Information</h3>
-          <ul class="list-unstyled">
-            <li class="d-flex mb-3">
-              <i class="bi bi-person-fill text-primary me-3 fs-5"></i>
-              <span><strong>Name:</strong> Shubham Jawale</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-calendar2-week-fill text-primary me-3 fs-5"></i>
-              <span><strong>Age:</strong> 22</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
-              <span><strong>Address:</strong> Barhanpoor, Maharashtra</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-briefcase-fill text-primary me-3 fs-5"></i>
-              <span><strong>Experience:</strong> Fresher</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-telephone-fill text-primary me-3 fs-5"></i>
-              <span><strong>Phone:</strong> +91 00000000000</span>
-            </li>
-          </ul>
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6  loading">
+          <p class="fs-3 fw-bold">Hey, I’m</p>
+          <h1>SHUBHAM JAWALE</h1>
+          <h2 class="fw-bold"> I’m a <span>Web Developer</span></h2>
+          <p class="about-p loading-dots fw-bold">I am completed BBA-CA from Nagar College and doing an internship at
+            A2Z IT Hub, where I am gaining hands-on experience in responsive web development. My responsibilities
+            include working on real-time projects and ensuring mobile-friendly designs. This internship is helping me
+            understand industry-level demands and preparing me to contribute effectively in professional environments.
+          </p>
+          <a href="https://github.com/shubhamja01" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/jawale_shubham__" target="_blank" title="Instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/shubham-jawale-11867732a/" target="_blank" title="Linkedin"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="mailto:sjawale947@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+          <div class="mt-4">
+            <a href="resume.pdf" target="_blank" class="btn btn-light rounded-pill px-4 shadow">Download CV</a>
+            <a href="#about" class="btn btn-outline-light rounded-pill px-4 ms-2">Contact Me</a>
+          </div>
         </div>
-      </div>
 
-      <!-- Right Side -->
-      <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card shadow-sm border-0 rounded-3 p-4 h-100">
-          <h3 class="mb-4 fw-semibold text-primary">More Details</h3>
-          <ul class="list-unstyled">
-            <li class="d-flex mb-3">
-              <i class="bi bi-gender-male text-primary me-3 fs-5"></i>
-              <span><strong>Gender:</strong> Male</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-heart-fill text-primary me-3 fs-5"></i>
-              <span><strong>Status:</strong> Unmarried</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-flag-fill text-primary me-3 fs-5"></i>
-              <span><strong>Nationality:</strong> Indian</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-translate text-primary me-3 fs-5"></i>
-              <span><strong>Languages:</strong> Marathi, Hindi, English</span>
-            </li>
-            <li class="d-flex mb-3">
-              <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
-              <span><strong>Email:</strong> sjawale947@gmail.com</span>
-            </li>
-          </ul>
+        <div class="col-sm-6 pic text-center" data-aos="zoom-in-up" data-aos-delay="200">
+          <img src="pic.png" alt="Profile" class="img-fluid rounded-5 shadow w-75 bg-white"
+            style="user-select: none !important;">
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 fw-bold" data-aos="fade-up" data-aos-duration="1200">About Me</h2>
 
-<section id="skills">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="row g-4 portfolio">
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="100">
-        <div class="card">
-          <img src="html.png" alt="HTMl Logo" class="m-2 img-fluid">
-          <h2>HTMl</h2>
+      <div class="row g-4 align-items-start">
+        <!-- Left Side -->
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card shadow-sm border-0 rounded-3 p-4 h-100">
+            <h3 class="mb-4 fw-semibold text-primary">Personal Information</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex mb-3">
+                <i class="bi bi-person-fill text-primary me-3 fs-5"></i>
+                <span><strong>Name:</strong> Shubham Jawale</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-calendar2-week-fill text-primary me-3 fs-5"></i>
+                <span><strong>Age:</strong> 22</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-geo-alt-fill text-primary me-3 fs-5"></i>
+                <span><strong>Address:</strong> Ahilyanagar, Maharashtra</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-briefcase-fill text-primary me-3 fs-5"></i>
+                <span><strong>Experience:</strong> 7 months internship </span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-telephone-fill text-primary me-3 fs-5"></i>
+                <span><strong>Phone:</strong> +91 00000000000</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="200">
-        <div class="card">
-          <img src="css-3.png" alt="CSS Logo" class="m-2 img-fluid">
-          <h2>CSS-3</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="300">
-        <div class="card">
-          <img src="bootstrap.png" alt="Bootstrap Logo" class="m-2 img-fluid">
-          <h2>BOOTSTRAP 5</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="400">
-        <div class="card">
-          <img src="java-script.png" alt="Javascript Logo" class="m-2 img-fluid">
-          <h2>JAVASCRIPT</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="500">
-        <div class="card">
-          <img src="jquery.png" alt="Jquery Logo" class="m-2 img-fluid">
-          <h2>JQUERY</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="600">
-        <div class="card">
-          <img src="php.png" alt="Php Logo" class="m-2 img-fluid">
-          <h2>PHP</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
-        <div class="card">
-          <img src="react.png" alt="React Logo" class="m-2 img-fluid">
-          <h2>REACT</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="800">
-        <div class="card">
-          <img src="mysql.png" alt="My Sql Logo" class="m-2 img-fluid">
-          <h2>MY SQL</h2>
-        </div>
-      </div>
-      <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
-        <div class="card">
-          <img src="github.png" alt="Github Logo" class="m-2 img-fluid">
-          <h2>GITHUB</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ===================== Work Section ===================== -->
-<section id="work" class="work-section py-5">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-5 text-gradient">My Work</h2>
-    <div class="row g-4">
-
-      <!-- Cold Drinks -->
-      <div class="col-md-6">
-        <div class="work-card gradient-blue h-100">
-          <img src="cold-drinks.png" alt="Cold Drinks" class="work-img">
-          <div class="p-4 text-white">
-            <h4 class="fw-bold">Cold Drinks</h4>
-            <p>
-              A responsive web app for cold beverages — soft drinks, juices, energy drinks and smoothies.
-            </p>
-            <div class="d-flex gap-2">
-              <a href="https://colddrinks.infinityfree.me/" target="_blank" class="btn btn-light btn-sm">View</a>
-              <!-- <a href="#" target="_blank" class="btn btn-outline-light btn-sm">Code</a> -->
-            </div>
+        <!-- Right Side -->
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card shadow-sm border-0 rounded-3 p-4 h-100">
+            <h3 class="mb-4 fw-semibold text-primary">More Details</h3>
+            <ul class="list-unstyled">
+              <li class="d-flex mb-3">
+                <i class="bi bi-gender-male text-primary me-3 fs-5"></i>
+                <span><strong>Gender:</strong> Male</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-heart-fill text-primary me-3 fs-5"></i>
+                <span><strong>Status:</strong> Unmarried</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-flag-fill text-primary me-3 fs-5"></i>
+                <span><strong>Nationality:</strong> Indian</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-translate text-primary me-3 fs-5"></i>
+                <span><strong>Languages:</strong> Marathi, Hindi, English</span>
+              </li>
+              <li class="d-flex mb-3">
+                <i class="bi bi-envelope-fill text-primary me-3 fs-5"></i>
+                <span><strong>Email:</strong> sjawale947@gmail.com</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Dairy Products -->
-      <div class="col-md-6">
-        <div class="work-card gradient-purple h-100">
-          <img src="milk-store.png" alt="Dairy Products" class="work-img">
-          <div class="p-4 text-white">
-            <h4 class="fw-bold">Dairy Products</h4>
-            <p>
-              A modern catalog for milk, curd, butter & cheese with smooth admin handling.
-            </p>
-            <div class="d-flex gap-2">
-              <a href="https://dairymilk.infinityfree.me/" target="_blank" class="btn btn-light btn-sm">View</a>
-              <!-- <a href="" target="_blank" class="btn btn-outline-light btn-sm">Code</a> -->
-            </div>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row g-4 portfolio">
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="100">
+          <div class="card">
+            <img src="html.png" alt="HTMl Logo" class="m-2 img-fluid">
+            <h2>HTMl</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="200">
+          <div class="card">
+            <img src="css.png" alt="CSS Logo" class="m-2 img-fluid">
+            <h2>CSS</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="300">
+          <div class="card">
+            <img src="bootstrap.png" alt="Bootstrap Logo" class="m-2 img-fluid">
+            <h2>BOOTSTRAP</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="400">
+          <div class="card">
+            <img src="java-script.png" alt="Javascript Logo" class="m-2 img-fluid">
+            <h2>JAVASCRIPT</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="500">
+          <div class="card">
+            <img src="jquery.png" alt="Jquery Logo" class="m-2 img-fluid">
+            <h2>JQUERY</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="600">
+          <div class="card">
+            <img src="php.png" alt="Php Logo" class="m-2 img-fluid">
+            <h2>PHP</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="react.png" alt="React Logo" class="m-2 img-fluid">
+            <h2>REACT</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="800">
+          <div class="card">
+            <img src="mysql.png" alt="My Sql Logo" class="m-2 img-fluid">
+            <h2>MY SQL</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="github.png" alt="Github Logo" class="m-2 img-fluid">
+            <h2>GITHUB</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="agile.png" alt="Agile Logo" class="m-2 img-fluid">
+            <h2>AGILE</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="IntelliJ.png" alt="IntelliJ Logo" class="m-2 img-fluid">
+            <h2>INTELLIJ IDEA</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="MongoDB.png" alt="MongoDB Logo" class="m-2 img-fluid">
+            <h2>MONGO DB</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="xml.png" alt="XML Logo" class="m-2 img-fluid">
+            <h2>XML</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="ci cd.png" alt="XML Logo" class="m-2 img-fluid">
+            <h2>CI CD</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="Nodejs.png" alt="Nodejs Logo" class="m-2 img-fluid">
+            <h2>NODE JS</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="mvc.png" alt="MVC Logo" class="m-2 img-fluid">
+            <h2>MVC</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="vs code.png" alt="VS Code Logo" class="m-2 img-fluid">
+            <h2>VS CODE</h2>
+          </div>
+        </div>
+        <div class="col-sm-3 p-2" data-aos="zoom-in-up" data-aos-delay="700">
+          <div class="card">
+            <img src="oop.png" alt="OOP Logo" class="m-2 img-fluid">
+            <h2>OOP</h2>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="bg-primary text-white text-center py-3">
-  <p class="mb-0">&copy; <script>document.write(new Date().getFullYear());</script> Shubham Jawale | All Rights Reserved</p>
-</footer>
+  <!-- ===================== Work Section ===================== -->
+  <section id="work" class="work-section py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5 text-gradient">My Work</h2>
+      <div class="row g-4">
 
-<script>
-  AOS.init({
-    duration: 1000,
-    offset: 100,
-    once: true
-  });
-</script>
+        <!-- Cold Drinks -->
+        <div class="col-md-6">
+          <div class="work-card gradient-blue h-100">
+            <img src="cold-drinks.png" alt="Cold Drinks" class="work-img">
+            <div class="p-4 text-white">
+              <h4 class="fw-bold">Cold Drinks</h4>
+              <p>
+                A responsive web app for cold beverages — soft drinks, juices, energy drinks and smoothies.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="https://colddrinks.infinityfree.me/" target="_blank" class="btn btn-light btn-sm">View</a>
+                <!-- <a href="#" target="_blank" class="btn btn-outline-light btn-sm">Code</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dairy Products -->
+        <div class="col-md-6">
+          <div class="work-card gradient-purple h-100">
+            <img src="milk-store.png" alt="Dairy Products" class="work-img">
+            <div class="p-4 text-white">
+              <h4 class="fw-bold">Dairy Products</h4>
+              <p>
+                A modern catalog for milk, curd, butter & cheese with smooth admin handling.
+              </p>
+              <div class="d-flex gap-2">
+                <a href="https://dairymilk.infinityfree.me/" target="_blank" class="btn btn-light btn-sm">View</a>
+                <!-- <a href="" target="_blank" class="btn btn-outline-light btn-sm">Code</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">&copy;
+      <script>document.write(new Date().getFullYear());</script> Shubham Jawale | All Rights Reserved
+    </p>
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: true
+    });
+  </script>
 </body>
+
 </html>

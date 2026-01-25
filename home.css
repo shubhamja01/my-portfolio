@@ -1,14 +1,14 @@
 /* 🌟 ==========================
    GLOBAL VARIABLES & ROOT
    ========================== */
-:root{
-  --wk-bg: #0f172a;          /* slate-900 */
-  --wk-card: #111827;        /* gray-900 */
-  --wk-card-2: #0b1224;      /* deep accent */
-  --wk-text: #e5e7eb;        /* gray-200 */
-  --wk-muted: #9ca3af;       /* gray-400 */
-  --wk-primary: #3b82f6;     /* blue-500 */
-  --wk-primary-2: #60a5fa;   /* blue-400 */
+:root {
+  --wk-bg: #0f172a; /* slate-900 */
+  --wk-card: #111827; /* gray-900 */
+  --wk-card-2: #0b1224; /* deep accent */
+  --wk-text: #e5e7eb; /* gray-200 */
+  --wk-muted: #9ca3af; /* gray-400 */
+  --wk-primary: #3b82f6; /* blue-500 */
+  --wk-primary-2: #60a5fa; /* blue-400 */
 }
 
 section {
@@ -34,8 +34,10 @@ section {
 .navbar::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(135deg, #f857a6, #ff5858);
   z-index: -1;
   transform: scaleX(0);
@@ -73,8 +75,13 @@ section {
   align-items: center;
 }
 
-.hero h1 { font-size: 3rem; font-weight: bold; }
-.hero h2 { font-size: 1.5rem; } 
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero h2 {
+  font-size: 1.5rem;
+}
 
 /* 🌟 Section Title with Hero Gradient Combo */
 .section-title {
@@ -103,19 +110,31 @@ section {
   height: 4px;
   background: linear-gradient(90deg, #3b82f6, #9333ea);
   border-radius: 3px;
-  box-shadow: 0 0 20px rgba(147,51,234,0.5);
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
   animation: slideIn 1s ease;
 }
 
 /* ✨ Keyframe Animations */
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-25px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideIn {
-  from { width: 0; opacity: 0; }
-  to { width: 100px; opacity: 1; }
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100px;
+    opacity: 1;
+  }
 }
 
 #about .card {
@@ -123,11 +142,10 @@ section {
   background: #fff;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease;
   /* background: linear-gradient(135deg, #f7971e, #ffd200); */
-
 }
 
 #about .card::before {
@@ -137,13 +155,15 @@ section {
   padding: 2px;
   border-radius: 16px;
   background: linear-gradient(135deg, #3b82f6, #9333ea);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
 
 #about .card:hover {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px) scale(1.02);
 }
 
@@ -190,7 +210,7 @@ section {
   color: #fff;
   overflow: hidden;
   transition: all 0.4s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Gradient border glow */
@@ -203,8 +223,8 @@ section {
   background: linear-gradient(135deg, #ff9a9e, #fad0c4, #00c6ff, #0072ff);
   background-size: 300% 300%;
   animation: borderFlow 6s linear infinite;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -232,7 +252,7 @@ section {
 /* Hover Effects */
 #skills .card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
 
 #skills .card:hover img {
@@ -241,11 +261,16 @@ section {
 
 /* Border gradient animation */
 @keyframes borderFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
 
 /* 🌟 ==========================
    WORK SECTION (Projects)
@@ -259,18 +284,20 @@ section {
 .work-card {
   border-radius: 1rem;
   overflow: hidden;
-  transition: transform .35s ease, box-shadow .35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 .work-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0,0,0,.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .work-img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 2px solid rgba(255,255,255,.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Gradient Variants */
@@ -281,8 +308,6 @@ section {
   background: linear-gradient(135deg, #7e22ce, #9333ea);
 }
 
-
-
 /* 🌟 ==========================
    EXTRA EFFECTS
    ========================== */
@@ -292,7 +317,7 @@ section {
   position: relative;
 }
 .loading-dots::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 1em;
   text-align: left;
@@ -303,18 +328,28 @@ section {
   visibility: visible;
 }
 @keyframes dots {
-  0%   { content: '.'; }
-  20%  { content: '..'; }
-  40%  { content: '...'; }
-  60%  { content: '....'; }
-  100% { content: '.'; }
+  0% {
+    content: ".";
+  }
+  20% {
+    content: "..";
+  }
+  40% {
+    content: "...";
+  }
+  60% {
+    content: "....";
+  }
+  100% {
+    content: ".";
+  }
 }
-.loading i{
-  color:wheat;
+.loading i {
+  color: wheat;
   font-size: 20px;
   margin-left: 5px;
 }
-.loading i:hover{
+.loading i:hover {
   transform: scale(1.2);
   transition: all 0.3s ease;
 }
@@ -328,4 +363,16 @@ section {
 .pic:hover img {
   transform: scale(1.05);
 }
-
+html,
+body {
+  user-select: none; /* Standard syntax */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  user-select: none; /* Internet Explorer/Edge */
+}
+img {
+  -webkit-user-drag: none; /* Image dragging roke */
+  user-select: none; /* Image selection roke */
+  -webkit-user-select: none;
+  pointer-events: none;
+}
