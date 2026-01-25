@@ -358,6 +358,10 @@ section {
   transition: transform 0.3s ease-in-out;
   max-height: 500px;
   user-select: none !important;
+  -webkit-user-drag: none; /* Image dragging roke */
+  user-select: none; /* Image selection roke */
+  -webkit-user-select: none;
+  pointer-events: none;
 }
 
 .pic:hover img {
