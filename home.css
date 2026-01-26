@@ -307,6 +307,9 @@ section {
 .gradient-purple {
   background: linear-gradient(135deg, #7e22ce, #9333ea);
 }
+.gradient-dark {
+  background: linear-gradient(135deg, #48404f, #413250);
+}
 
 /* 🌟 ==========================
    EXTRA EFFECTS
