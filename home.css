@@ -167,17 +167,29 @@ section {
   transform: translateY(-5px) scale(1.02);
 }
 
+#about .card ul li {
+  position: relative;
+  transition: transform 0.3s ease;
+
+}
+
+#about .card ul li:hover{
+  transform:scale(1.02) !important;
+  transition: all 0.3s ease !important;
+}
+
 #about .card h3 {
   font-weight: 700;
   font-size: 1.5rem;
   color: #3b82f6;
 }
+
 /* #about .card ul li {
   font-size: 1rem;
   color: rgba(255,255,255,0.9);
-}
+} */
 
-#about .card i {
+/* #about .card i {
   color: #ffda6a;
 } */
 
@@ -367,6 +379,11 @@ section {
   pointer-events: none;
 }
 
+@media(max-width:576px){
+  .pic img {
+    margin-top: 20px;
+  }
+}
 .pic:hover img {
   transform: scale(1.05);
 }
