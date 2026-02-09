@@ -320,7 +320,10 @@ section {
   background: linear-gradient(135deg, #7e22ce, #9333ea);
 }
 .gradient-dark {
-  background: linear-gradient(135deg, #48404f, #413250);
+  background: linear-gradient(135deg, #a08bb3, #413250);
+}
+.gradient-info {
+  background: linear-gradient(135deg, #86a9d2, #413250);
 }
 
 /* 🌟 ==========================
